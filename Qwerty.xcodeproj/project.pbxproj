@@ -12,13 +12,17 @@
 		5B7D6D30261CA7450086F45E /* keyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7D6D2F261CA7450086F45E /* keyboard.storyboard */; };
 		BF2C7894261C567400F1FFCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7893261C567400F1FFCA /* AppDelegate.swift */; };
 		BF2C7896261C567400F1FFCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7895261C567400F1FFCA /* SceneDelegate.swift */; };
-		BF2C7898261C567400F1FFCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7897261C567400F1FFCA /* ViewController.swift */; };
+		BF2C7898261C567400F1FFCA /* RiwayatSemuaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7897261C567400F1FFCA /* RiwayatSemuaViewController.swift */; };
 		BF2C789B261C567400F1FFCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2C7899261C567400F1FFCA /* Main.storyboard */; };
 		BF2C789E261C567400F1FFCA /* Qwerty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF2C789C261C567400F1FFCA /* Qwerty.xcdatamodeld */; };
 		BF2C78A0261C567500F1FFCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2C789F261C567500F1FFCA /* Assets.xcassets */; };
 		BF2C78A3261C567500F1FFCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2C78A1261C567500F1FFCA /* LaunchScreen.storyboard */; };
 		BF2C78AE261C567500F1FFCA /* QwertyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C78AD261C567500F1FFCA /* QwertyTests.swift */; };
 		BF2C78B9261C567500F1FFCA /* QwertyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C78B8261C567500F1FFCA /* QwertyUITests.swift */; };
+		BF2C78D2261CB29A00F1FFCA /* Riwayat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C78D1261CB29A00F1FFCA /* Riwayat.swift */; };
+		BF2C78D8261CB32A00F1FFCA /* RiwayatData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C78D7261CB32A00F1FFCA /* RiwayatData.swift */; };
+		BF2C78DE261CC22E00F1FFCA /* RiwayatSemuaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C78DD261CC22E00F1FFCA /* RiwayatSemuaTableViewCell.swift */; };
+		BF2C78F0261CD75C00F1FFCA /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C78EF261CD75C00F1FFCA /* Converter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +71,7 @@
 		BF2C7890261C567400F1FFCA /* Qwerty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qwerty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2C7893261C567400F1FFCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF2C7895261C567400F1FFCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF2C7897261C567400F1FFCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF2C7897261C567400F1FFCA /* RiwayatSemuaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatSemuaViewController.swift; sourceTree = "<group>"; };
 		BF2C789A261C567400F1FFCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF2C789D261C567400F1FFCA /* Qwerty.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Qwerty.xcdatamodel; sourceTree = "<group>"; };
 		BF2C789F261C567500F1FFCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,6 +83,10 @@
 		BF2C78B4261C567500F1FFCA /* QwertyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QwertyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2C78B8261C567500F1FFCA /* QwertyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QwertyUITests.swift; sourceTree = "<group>"; };
 		BF2C78BA261C567500F1FFCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF2C78D1261CB29A00F1FFCA /* Riwayat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Riwayat.swift; sourceTree = "<group>"; };
+		BF2C78D7261CB32A00F1FFCA /* RiwayatData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatData.swift; sourceTree = "<group>"; };
+		BF2C78DD261CC22E00F1FFCA /* RiwayatSemuaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatSemuaTableViewCell.swift; sourceTree = "<group>"; };
+		BF2C78EF261CD75C00F1FFCA /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,8 +158,12 @@
 			children = (
 				BF2C7893261C567400F1FFCA /* AppDelegate.swift */,
 				BF2C7895261C567400F1FFCA /* SceneDelegate.swift */,
-				BF2C7897261C567400F1FFCA /* ViewController.swift */,
+				BF2C7897261C567400F1FFCA /* RiwayatSemuaViewController.swift */,
 				BF2C7899261C567400F1FFCA /* Main.storyboard */,
+				BF2C78DD261CC22E00F1FFCA /* RiwayatSemuaTableViewCell.swift */,
+				BF2C78D1261CB29A00F1FFCA /* Riwayat.swift */,
+				BF2C78EF261CD75C00F1FFCA /* Converter.swift */,
+				BF2C78D7261CB32A00F1FFCA /* RiwayatData.swift */,
 				BF2C789F261C567500F1FFCA /* Assets.xcassets */,
 				BF2C78A1261C567500F1FFCA /* LaunchScreen.storyboard */,
 				BF2C78A4261C567500F1FFCA /* Info.plist */,
@@ -347,9 +359,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF2C7898261C567400F1FFCA /* ViewController.swift in Sources */,
+				BF2C78DE261CC22E00F1FFCA /* RiwayatSemuaTableViewCell.swift in Sources */,
+				BF2C7898261C567400F1FFCA /* RiwayatSemuaViewController.swift in Sources */,
+				BF2C78F0261CD75C00F1FFCA /* Converter.swift in Sources */,
 				BF2C7894261C567400F1FFCA /* AppDelegate.swift in Sources */,
 				BF2C7896261C567400F1FFCA /* SceneDelegate.swift in Sources */,
+				BF2C78D8261CB32A00F1FFCA /* RiwayatData.swift in Sources */,
+				BF2C78D2261CB29A00F1FFCA /* Riwayat.swift in Sources */,
 				BF2C789E261C567400F1FFCA /* Qwerty.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
