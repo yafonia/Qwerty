@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B7D6CFE261CA5510086F45E /* QwertyKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5B7D6CF6261CA5510086F45E /* QwertyKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5B7D6D0C261CA60E0086F45E /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7D6D06261CA6060086F45E /* KeyboardViewController.swift */; };
+		5B7D6D30261CA7450086F45E /* keyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7D6D2F261CA7450086F45E /* keyboard.storyboard */; };
 		BF2C7894261C567400F1FFCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7893261C567400F1FFCA /* AppDelegate.swift */; };
 		BF2C7896261C567400F1FFCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7895261C567400F1FFCA /* SceneDelegate.swift */; };
 		BF2C7898261C567400F1FFCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7897261C567400F1FFCA /* ViewController.swift */; };
@@ -19,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5B7D6CFB261CA5510086F45E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF2C7888261C567400F1FFCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B7D6CF5261CA5510086F45E;
+			remoteInfo = QwertyKeyboard;
+		};
 		BF2C78AA261C567500F1FFCA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BF2C7888261C567400F1FFCA /* Project object */;
@@ -35,7 +45,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5B7D6CFD261CA5510086F45E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5B7D6CFE261CA5510086F45E /* QwertyKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5B7D6CF6261CA5510086F45E /* QwertyKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QwertyKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B7D6D06261CA6060086F45E /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		5B7D6D1D261CA6AF0086F45E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B7D6D2F261CA7450086F45E /* keyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = keyboard.storyboard; sourceTree = "<group>"; };
 		BF2C7890261C567400F1FFCA /* Qwerty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qwerty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2C7893261C567400F1FFCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF2C7895261C567400F1FFCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +82,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5B7D6CF3261CA5510086F45E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BF2C788D261C567400F1FFCA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,12 +113,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B7D6CF7261CA5510086F45E /* QwertyKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5B7D6D2F261CA7450086F45E /* keyboard.storyboard */,
+				5B7D6D1D261CA6AF0086F45E /* Info.plist */,
+				5B7D6D06261CA6060086F45E /* KeyboardViewController.swift */,
+			);
+			path = QwertyKeyboard;
+			sourceTree = "<group>";
+		};
 		BF2C7887261C567400F1FFCA = {
 			isa = PBXGroup;
 			children = (
 				BF2C7892261C567400F1FFCA /* Qwerty */,
 				BF2C78AC261C567500F1FFCA /* QwertyTests */,
 				BF2C78B7261C567500F1FFCA /* QwertyUITests */,
+				5B7D6CF7261CA5510086F45E /* QwertyKeyboard */,
 				BF2C7891261C567400F1FFCA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +140,7 @@
 				BF2C7890261C567400F1FFCA /* Qwerty.app */,
 				BF2C78A9261C567500F1FFCA /* QwertyTests.xctest */,
 				BF2C78B4261C567500F1FFCA /* QwertyUITests.xctest */,
+				5B7D6CF6261CA5510086F45E /* QwertyKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,6 +181,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5B7D6CF5261CA5510086F45E /* QwertyKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B7D6D01261CA5510086F45E /* Build configuration list for PBXNativeTarget "QwertyKeyboard" */;
+			buildPhases = (
+				5B7D6CF2261CA5510086F45E /* Sources */,
+				5B7D6CF3261CA5510086F45E /* Frameworks */,
+				5B7D6CF4261CA5510086F45E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QwertyKeyboard;
+			productName = QwertyKeyboard;
+			productReference = 5B7D6CF6261CA5510086F45E /* QwertyKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		BF2C788F261C567400F1FFCA /* Qwerty */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF2C78BD261C567500F1FFCA /* Build configuration list for PBXNativeTarget "Qwerty" */;
@@ -141,10 +205,12 @@
 				BF2C788C261C567400F1FFCA /* Sources */,
 				BF2C788D261C567400F1FFCA /* Frameworks */,
 				BF2C788E261C567400F1FFCA /* Resources */,
+				5B7D6CFD261CA5510086F45E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5B7D6CFC261CA5510086F45E /* PBXTargetDependency */,
 			);
 			name = Qwerty;
 			productName = Qwerty;
@@ -196,6 +262,9 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					5B7D6CF5261CA5510086F45E = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					BF2C788F261C567400F1FFCA = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -225,11 +294,20 @@
 				BF2C788F261C567400F1FFCA /* Qwerty */,
 				BF2C78A8261C567500F1FFCA /* QwertyTests */,
 				BF2C78B3261C567500F1FFCA /* QwertyUITests */,
+				5B7D6CF5261CA5510086F45E /* QwertyKeyboard */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5B7D6CF4261CA5510086F45E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B7D6D30261CA7450086F45E /* keyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BF2C788E261C567400F1FFCA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -257,6 +335,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5B7D6CF2261CA5510086F45E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B7D6D0C261CA60E0086F45E /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BF2C788C261C567400F1FFCA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -287,6 +373,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5B7D6CFC261CA5510086F45E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B7D6CF5261CA5510086F45E /* QwertyKeyboard */;
+			targetProxy = 5B7D6CFB261CA5510086F45E /* PBXContainerItemProxy */;
+		};
 		BF2C78AB261C567500F1FFCA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BF2C788F261C567400F1FFCA /* Qwerty */;
@@ -319,6 +410,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5B7D6CFF261CA5510086F45E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6S52R6225B;
+				INFOPLIST_FILE = QwertyKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yafoniahutabarat.Qwerty.QwertyKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B7D6D00261CA5510086F45E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6S52R6225B;
+				INFOPLIST_FILE = QwertyKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yafoniahutabarat.Qwerty.QwertyKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		BF2C78BB261C567500F1FFCA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -438,6 +567,7 @@
 		BF2C78BE261C567500F1FFCA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -457,6 +587,7 @@
 		BF2C78BF261C567500F1FFCA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -560,6 +691,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5B7D6D01261CA5510086F45E /* Build configuration list for PBXNativeTarget "QwertyKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B7D6CFF261CA5510086F45E /* Debug */,
+				5B7D6D00261CA5510086F45E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BF2C788B261C567400F1FFCA /* Build configuration list for PBXProject "Qwerty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
