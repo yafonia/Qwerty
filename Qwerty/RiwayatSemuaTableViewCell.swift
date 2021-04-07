@@ -13,20 +13,22 @@ class RiwayatSemuaTableViewCell: UITableViewCell {
     @IBOutlet var kalimatLabel: UILabel!
     @IBOutlet var timestampLabel: UILabel!
     
-    var riwayat: Riwayat? {
+    
+    var riwayat: History? {
         didSet {
             guard let riwayatItem = riwayat else {return}
             if let kataKotor = riwayatItem.kataKotor {
-                kataKotorLabel.text = Converter.convertArrayToString(array: kataKotor)
+                kataKotorLabel.text = kataKotor
             }
             if let kalimat = riwayatItem.kalimat {
                 kalimatLabel.text = kalimat
             }
-            if let timestamp = riwayatItem.timestamp {
-                timestampLabel.text = "09.00"
+            if let timestamp = riwayatItem.waktu {
+                timestampLabel.text = Converter.convertDateToStringHourMinute(date: timestamp)
             }
         }
     }
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

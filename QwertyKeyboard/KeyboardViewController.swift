@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import CoreData
 
 class KeyboardViewController: UIInputViewController {
-
+    
     @IBOutlet var nextKeyboardButton: UIButton!
     
     @IBOutlet var mainView: UIView!
@@ -268,7 +269,14 @@ class KeyboardViewController: UIInputViewController {
         
     }
     
+    // MARK: Detection start here
+    
+    let dataController = KeyboardDataController()
+    
     override func textDidChange(_ textInput: UITextInput?) {
+        var platform = ""
+        var kataKotor = ""
+        
         // The app has just changed the document's contents, the document context has been updated.
         print("DID CHANGE")
         var textColor: UIColor
@@ -279,9 +287,21 @@ class KeyboardViewController: UIInputViewController {
         
         if ((fullText != selectedText) && (textBefore == "nil18236491824before") && (textAfter == "nil18236491824after"))  {
             print(fullText)
+            
+            kataKotor = getKataKotor(fullText)
+            
             if let parentViewController = self.parent {
+                
                 let hostBundleID = parentViewController.value(forKey: "_hostBundleID")
-                print(hostBundleID ?? "default value")
+                
+                platform = bundleToPlatform(hostBundleID! as! String)
+                
+//                let listKata = ["anjing", "anjir", "tai", "bangsat"]
+//                dataController.saveKataKotor(listKata)
+        
+            }
+            if kataKotor != "" {
+                dataController.saveHistory(kalimat: fullText, kataKotor: kataKotor, platform: platform)
             }
         }
         
@@ -292,5 +312,46 @@ class KeyboardViewController: UIInputViewController {
         }
         self.nextKeyboardButton.setTitleColor(textColor, for: [])
     }
+    
+    func getKataKotor(_ kalimat : String) -> String {
+        let kataArray = kalimat.components(separatedBy: " ")
+        var stringKataKotor = ""
+        
+        for kata in kataArray{
+            if dataController.isKataKotor(kata) {
+                stringKataKotor += ", \(kata.capitalized)"
+            }
+        }
+        
+        if stringKataKotor != "" {
+            let start = stringKataKotor.index(stringKataKotor.startIndex, offsetBy: 2)
+            let end = stringKataKotor.endIndex
+            let range = start..<end
 
+            stringKataKotor = String(stringKataKotor[range])
+        }
+        
+        return stringKataKotor
+    }
+    
+    
+    
+    func bundleToPlatform(_ bundleID : String) -> String{
+        let start = bundleID.index(bundleID.startIndex, offsetBy: 4)
+        let end = bundleID.endIndex
+        let range = start..<end
+
+        var platform = ""
+        
+        platform = String(bundleID[range])
+
+        platform = platform.replacingOccurrences(of: ".", with: " ", options: NSString.CompareOptions.literal, range: nil)
+
+        return platform.capitalized
+        
+    }
+    
+    
+    
+    
 }

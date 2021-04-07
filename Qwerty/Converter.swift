@@ -9,6 +9,15 @@ import Foundation
 
 class Converter {
     
+    static func convertDateToStringHourMinute(date: Date) -> String {
+        let dateFormatter = DateFormatter()
+
+        dateFormatter.dateFormat = "hh:mm"
+
+        return dateFormatter.string(from: date)
+    }
+    
+    
     static func convertArrayToString(array: [String]) -> String {
         var merged = ""
         let arrayLen = array.count
