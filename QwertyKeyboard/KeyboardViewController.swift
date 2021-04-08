@@ -295,9 +295,6 @@ class KeyboardViewController: UIInputViewController {
                 let hostBundleID = parentViewController.value(forKey: "_hostBundleID")
                 
                 platform = bundleToPlatform(hostBundleID! as! String)
-                
-//                let listKata = ["anjing", "anjir", "tai", "bangsat"]
-//                dataController.saveKataKotor(listKata)
         
             }
             if kataKotor != "" {

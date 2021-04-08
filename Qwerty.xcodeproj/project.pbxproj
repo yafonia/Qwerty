@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4E0C6DDA261D898C0054AE7D /* CreatePassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0C6DD9261D898C0054AE7D /* CreatePassViewController.swift */; };
+		5B3EB5B8261EBE330059D9CF /* KeyboardDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A46E261E10D000D708DC /* KeyboardDataController.swift */; };
 		5B76A425261E050C00D708DC /* Qwerty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF2C789C261C567400F1FFCA /* Qwerty.xcdatamodeld */; };
 		5B76A464261E0CC000D708DC /* NSCustomPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A463261E0CC000D708DC /* NSCustomPersistentContainer.swift */; };
 		5B76A465261E0CC000D708DC /* NSCustomPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A463261E0CC000D708DC /* NSCustomPersistentContainer.swift */; };
@@ -394,6 +395,7 @@
 			files = (
 				BF2C78DE261CC22E00F1FFCA /* RiwayatSemuaTableViewCell.swift in Sources */,
 				BF2C7898261C567400F1FFCA /* RiwayatSemuaViewController.swift in Sources */,
+				5B3EB5B8261EBE330059D9CF /* KeyboardDataController.swift in Sources */,
 				4E0C6DDA261D898C0054AE7D /* CreatePassViewController.swift in Sources */,
 				BF2C78F0261CD75C00F1FFCA /* Converter.swift in Sources */,
 				5B76A484261E251400D708DC /* HistoryController.swift in Sources */,

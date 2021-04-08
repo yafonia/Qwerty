@@ -55,10 +55,12 @@ class KeyboardDataController {
         saveChanges(context)
     }
     
-    func saveKataKotor(_ listKataKotor : [String]){
+   func loadKataKotor(){
         let context = persistentContainer.viewContext
         
-        for kata in listKataKotor {
+        let listKata = ["anjing", "anjir", "tai", "bangsat"]
+        
+        for kata in listKata {
             let newKataKotor = KataKotor(context: context)
             newKataKotor.kata = kata
             saveChanges(context)

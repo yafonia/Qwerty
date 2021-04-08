@@ -18,10 +18,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // app location 
         print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as String)
         
+        // check if kata kotor already loaded
+        let defaults = UserDefaults.standard
+        let isPreloaded = defaults.bool(forKey: "kataKotorLoaded")
+        if !isPreloaded {
+            KeyboardDataController().loadKataKotor()
+            defaults.set(true, forKey: "kataKotorLoaded")
+        }
         
         // Override point for customization after application launch.
         return true
     }
+    
+    
+    
 
     // MARK: UISceneSession Lifecycle
 
