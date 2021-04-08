@@ -1,14 +1,15 @@
 //
-//  CreatePassViewController.swift
+//  VerifPassViewController.swift
 //  Qwerty
 //
-//  Created by Jonathan Herbert on 07/04/21.
+//  Created by Jonathan Herbert on 08/04/21.
 //
 
 import UIKit
 
-class CreatePassViewController: UIViewController {
-
+class VerifPassViewController: UIViewController {
+    
+    var newPass = String()
     var tempPass = ""
     
     @IBOutlet weak var circle1: UIImageView!
@@ -18,12 +19,14 @@ class CreatePassViewController: UIViewController {
     @IBOutlet weak var circle5: UIImageView!
     @IBOutlet weak var circle6: UIImageView!
     
+    @IBOutlet weak var warningPass: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        warningPass.isHidden = true
         // Do any additional setup after loading the view.
     }
-
+    
     @IBAction func passButton(_ sender: UIButton) {
         if tempPass.count < 6 {
             tempPass = tempPass + sender.currentTitle!
@@ -91,13 +94,29 @@ class CreatePassViewController: UIViewController {
             circle4.image = UIImage.init(systemName: "circle.fill")
             circle5.image = UIImage.init(systemName: "circle.fill")
             circle6.image = UIImage.init(systemName: "circle.fill")
-            performSegue(withIdentifier: "createPassSegue", sender: nil)
+            if tempPass == newPass {
+                
+            }else{
+                view.shake()
+                tempPass = ""
+                imageLoad()
+                warningPass.isHidden = false
+            }
         }
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "createPassSegue") {
-            let view = segue.destination as! VerifPassViewController
-            view.newPass = tempPass
-        }
+    
+}
+
+public extension UIView {
+
+    func shake(count : Float = 2,for duration : TimeInterval = 0.1,withTranslation translation : Float = 3) {
+
+        let animation = CAKeyframeAnimation(keyPath: "transform.translation.x")
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+        animation.repeatCount = count
+        animation.duration = duration/TimeInterval(animation.repeatCount)
+        animation.autoreverses = true
+        animation.values = [translation, -translation]
+        layer.add(animation, forKey: "shake")
     }
 }
