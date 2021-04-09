@@ -9,10 +9,11 @@ import UIKit
 
 class RiwayatSemuaTableViewCell: UITableViewCell {
     
+    @IBOutlet var verticalStackView: UIStackView!
+    @IBOutlet var horizontalStackView: UIStackView!
     @IBOutlet var kataKotorLabel: UILabel!
     @IBOutlet var kalimatLabel: UILabel!
     @IBOutlet var timestampLabel: UILabel!
-    
     
     var riwayat: History? {
         didSet {
@@ -32,13 +33,20 @@ class RiwayatSemuaTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.layer.cornerRadius = 14
+        let verticalPadding: CGFloat = 16
+
+        let maskLayer = CALayer()
+        maskLayer.cornerRadius = 14    //if you want round edges
+        maskLayer.backgroundColor = UIColor.black.cgColor
+        maskLayer.frame = CGRect(x: self.bounds.origin.x, y: self.bounds.origin.y, width: self.bounds.width, height: self.bounds.height).insetBy(dx: 0, dy: verticalPadding/2)
+        self.layer.mask = maskLayer
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
+    
+    
 
 }
