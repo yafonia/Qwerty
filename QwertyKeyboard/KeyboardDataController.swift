@@ -22,7 +22,7 @@ class KeyboardDataController {
            })
            return container
        }()
-
+    
     //MARK: Controller
     
     func isKataKotor(_ kata : String) -> Bool {
@@ -30,7 +30,6 @@ class KeyboardDataController {
         let context = persistentContainer.viewContext
         let request : NSFetchRequest<KataKotor> = KataKotor.fetchRequest()
         var rowCount = 0
-        
         request.predicate = NSPredicate(format: "kata MATCHES[cd] %@", kata)
         
         do {
@@ -38,6 +37,19 @@ class KeyboardDataController {
         } catch  {
             print("Error checking row count \(error)")
         }
+        
+        if rowCount > 0 {
+            print("--------------------------------------------------- \(rowCount) ----------------------------")
+            do {
+                let kataKotor = try context.fetch(request)[0]
+                let newTotal = kataKotor.total + 1
+                kataKotor.setValue(newTotal, forKey: "total")
+                saveChanges(context)
+            } catch  {
+                print("Error update total in KataKotor \(error)")
+            }
+        }
+        
         
         return rowCount == 0 ? false : true
     }
@@ -53,6 +65,7 @@ class KeyboardDataController {
         newHistory.waktu = Date()
         
         saveChanges(context)
+        print("--------------------------------------------------- sukses kesimpen woeeyy ----------------------------")
     }
     
    func loadKataKotor(){

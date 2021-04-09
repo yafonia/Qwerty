@@ -95,7 +95,7 @@ class VerifPassViewController: UIViewController {
             circle5.image = UIImage.init(systemName: "circle.fill")
             circle6.image = UIImage.init(systemName: "circle.fill")
             if tempPass == newPass {
-                
+                UserService().saveUserPassword(newPass)
             }else{
                 view.shake()
                 tempPass = ""

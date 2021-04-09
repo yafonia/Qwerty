@@ -12,7 +12,7 @@ class RiwayatSemuaViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     @IBOutlet var navBar: UINavigationBar!
 
-    private let riwayatData = RiwayatData.getRiwayat()
+    private let riwayatData = HistoryService().getHistory(filter: "All")
     
     override func viewDidLoad() {
         super.viewDidLoad()

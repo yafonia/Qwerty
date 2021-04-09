@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // app location 
         print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as String)
-        
+        print("ini app baru lagii mangatststst clone clone clone")
         // check if kata kotor already loaded
         let defaults = UserDefaults.standard
         let isPreloaded = defaults.bool(forKey: "kataKotorLoaded")

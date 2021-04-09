@@ -12,12 +12,17 @@
 		4EDA3DF7261EFCC000368B1B /* DetailKalimatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA3DF6261EFCC000368B1B /* DetailKalimatViewController.swift */; };
 		4EDA3DFD261F370C00368B1B /* joWorkspace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EDA3DFC261F370C00368B1B /* joWorkspace.storyboard */; };
 		5B3EB5B8261EBE330059D9CF /* KeyboardDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A46E261E10D000D708DC /* KeyboardDataController.swift */; };
+		5B6ADFD1261FFB3D00ED8594 /* HistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6ADFD0261FFB3D00ED8594 /* HistoryService.swift */; };
+		5B6ADFDB261FFB4C00ED8594 /* KataKotorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6ADFDA261FFB4C00ED8594 /* KataKotorService.swift */; };
+		5B6ADFE1261FFB5900ED8594 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6ADFE0261FFB5900ED8594 /* UserService.swift */; };
+		5B6ADFE7261FFB6800ED8594 /* KeyboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6ADFE6261FFB6800ED8594 /* KeyboardService.swift */; };
+		5B6ADFED261FFB7800ED8594 /* ContextService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6ADFEC261FFB7800ED8594 /* ContextService.swift */; };
+		5B6ADFF4261FFBB700ED8594 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6ADFF3261FFBB700ED8594 /* DateExtension.swift */; };
+		5B6ADFFE261FFC3A00ED8594 /* KataKotorRiwayat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6ADFFD261FFC3A00ED8594 /* KataKotorRiwayat.swift */; };
 		5B76A425261E050C00D708DC /* Qwerty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF2C789C261C567400F1FFCA /* Qwerty.xcdatamodeld */; };
 		5B76A464261E0CC000D708DC /* NSCustomPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A463261E0CC000D708DC /* NSCustomPersistentContainer.swift */; };
 		5B76A465261E0CC000D708DC /* NSCustomPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A463261E0CC000D708DC /* NSCustomPersistentContainer.swift */; };
 		5B76A46F261E10D000D708DC /* KeyboardDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A46E261E10D000D708DC /* KeyboardDataController.swift */; };
-		5B76A484261E251400D708DC /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A483261E251400D708DC /* HistoryController.swift */; };
-		5B76A48A261E253400D708DC /* KataKotorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A489261E253400D708DC /* KataKotorController.swift */; };
 		5B7D6CFE261CA5510086F45E /* QwertyKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5B7D6CF6261CA5510086F45E /* QwertyKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5B7D6D0C261CA60E0086F45E /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7D6D06261CA6060086F45E /* KeyboardViewController.swift */; };
 		5B7D6D30261CA7450086F45E /* keyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7D6D2F261CA7450086F45E /* keyboard.storyboard */; };
@@ -30,7 +35,6 @@
 		BF2C78A3261C567500F1FFCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2C78A1261C567500F1FFCA /* LaunchScreen.storyboard */; };
 		BF2C78AE261C567500F1FFCA /* QwertyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C78AD261C567500F1FFCA /* QwertyTests.swift */; };
 		BF2C78B9261C567500F1FFCA /* QwertyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C78B8261C567500F1FFCA /* QwertyUITests.swift */; };
-		BF2C78D8261CB32A00F1FFCA /* RiwayatData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C78D7261CB32A00F1FFCA /* RiwayatData.swift */; };
 		BF2C78DE261CC22E00F1FFCA /* RiwayatSemuaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C78DD261CC22E00F1FFCA /* RiwayatSemuaTableViewCell.swift */; };
 		BF2C78F0261CD75C00F1FFCA /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C78EF261CD75C00F1FFCA /* Converter.swift */; };
 /* End PBXBuildFile section */
@@ -79,10 +83,16 @@
 		4EDA3DF1261EDE5500368B1B /* Qwerty.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Qwerty.entitlements; sourceTree = "<group>"; };
 		4EDA3DF6261EFCC000368B1B /* DetailKalimatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailKalimatViewController.swift; sourceTree = "<group>"; };
 		4EDA3DFC261F370C00368B1B /* joWorkspace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = joWorkspace.storyboard; sourceTree = "<group>"; };
+		5B6ADFC6261FFAD600ED8594 /* QwertyKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QwertyKeyboard.entitlements; sourceTree = "<group>"; };
+		5B6ADFD0261FFB3D00ED8594 /* HistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryService.swift; sourceTree = "<group>"; };
+		5B6ADFDA261FFB4C00ED8594 /* KataKotorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataKotorService.swift; sourceTree = "<group>"; };
+		5B6ADFE0261FFB5900ED8594 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		5B6ADFE6261FFB6800ED8594 /* KeyboardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardService.swift; sourceTree = "<group>"; };
+		5B6ADFEC261FFB7800ED8594 /* ContextService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextService.swift; sourceTree = "<group>"; };
+		5B6ADFF3261FFBB700ED8594 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		5B6ADFFD261FFC3A00ED8594 /* KataKotorRiwayat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataKotorRiwayat.swift; sourceTree = "<group>"; };
 		5B76A463261E0CC000D708DC /* NSCustomPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCustomPersistentContainer.swift; sourceTree = "<group>"; };
 		5B76A46E261E10D000D708DC /* KeyboardDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardDataController.swift; sourceTree = "<group>"; };
-		5B76A483261E251400D708DC /* HistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
-		5B76A489261E253400D708DC /* KataKotorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataKotorController.swift; sourceTree = "<group>"; };
 		5B7D6CF6261CA5510086F45E /* QwertyKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QwertyKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B7D6D06261CA6060086F45E /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		5B7D6D1D261CA6AF0086F45E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,7 +112,6 @@
 		BF2C78B4261C567500F1FFCA /* QwertyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QwertyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2C78B8261C567500F1FFCA /* QwertyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QwertyUITests.swift; sourceTree = "<group>"; };
 		BF2C78BA261C567500F1FFCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BF2C78D7261CB32A00F1FFCA /* RiwayatData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatData.swift; sourceTree = "<group>"; };
 		BF2C78DD261CC22E00F1FFCA /* RiwayatSemuaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatSemuaTableViewCell.swift; sourceTree = "<group>"; };
 		BF2C78EF261CD75C00F1FFCA /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,8 +153,6 @@
 			children = (
 				BF2C7897261C567400F1FFCA /* RiwayatSemuaViewController.swift */,
 				4E0C6DD9261D898C0054AE7D /* CreatePassViewController.swift */,
-				5B76A483261E251400D708DC /* HistoryController.swift */,
-				5B76A489261E253400D708DC /* KataKotorController.swift */,
 				4EDA3DEB261ED14800368B1B /* VerifPassViewController.swift */,
 				4EDA3DF6261EFCC000368B1B /* DetailKalimatViewController.swift */,
 			);
@@ -156,13 +163,35 @@
 			isa = PBXGroup;
 			children = (
 				BF2C789C261C567400F1FFCA /* Qwerty.xcdatamodeld */,
+				5B6ADFFD261FFC3A00ED8594 /* KataKotorRiwayat.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5B6ADFCF261FFB2700ED8594 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5B6ADFD0261FFB3D00ED8594 /* HistoryService.swift */,
+				5B6ADFDA261FFB4C00ED8594 /* KataKotorService.swift */,
+				5B6ADFE0261FFB5900ED8594 /* UserService.swift */,
+				5B6ADFE6261FFB6800ED8594 /* KeyboardService.swift */,
+				5B6ADFEC261FFB7800ED8594 /* ContextService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5B6ADFF2261FFBA500ED8594 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5B6ADFF3261FFBB700ED8594 /* DateExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		5B7D6CF7261CA5510086F45E /* QwertyKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				5B6ADFC6261FFAD600ED8594 /* QwertyKeyboard.entitlements */,
 				5B76A463261E0CC000D708DC /* NSCustomPersistentContainer.swift */,
 				5B7D6D2F261CA7450086F45E /* keyboard.storyboard */,
 				5B7D6D1D261CA6AF0086F45E /* Info.plist */,
@@ -204,9 +233,10 @@
 				4EDA3DFC261F370C00368B1B /* joWorkspace.storyboard */,
 				4E0C6DBE261D7FBD0054AE7D /* Controller */,
 				4E0C6DC3261D7FC60054AE7D /* Model */,
+				5B6ADFCF261FFB2700ED8594 /* Service */,
+				5B6ADFF2261FFBA500ED8594 /* Extension */,
 				BF2C78DD261CC22E00F1FFCA /* RiwayatSemuaTableViewCell.swift */,
 				BF2C78EF261CD75C00F1FFCA /* Converter.swift */,
-				BF2C78D7261CB32A00F1FFCA /* RiwayatData.swift */,
 				BF2C789F261C567500F1FFCA /* Assets.xcassets */,
 				BF2C78A1261C567500F1FFCA /* LaunchScreen.storyboard */,
 				BF2C78A4261C567500F1FFCA /* Info.plist */,
@@ -405,18 +435,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B6ADFED261FFB7800ED8594 /* ContextService.swift in Sources */,
 				BF2C78DE261CC22E00F1FFCA /* RiwayatSemuaTableViewCell.swift in Sources */,
+				5B6ADFD1261FFB3D00ED8594 /* HistoryService.swift in Sources */,
+				5B6ADFE7261FFB6800ED8594 /* KeyboardService.swift in Sources */,
 				4EDA3DF7261EFCC000368B1B /* DetailKalimatViewController.swift in Sources */,
 				BF2C7898261C567400F1FFCA /* RiwayatSemuaViewController.swift in Sources */,
 				5B3EB5B8261EBE330059D9CF /* KeyboardDataController.swift in Sources */,
 				4E0C6DDA261D898C0054AE7D /* CreatePassViewController.swift in Sources */,
 				BF2C78F0261CD75C00F1FFCA /* Converter.swift in Sources */,
 				4EDA3DEC261ED14800368B1B /* VerifPassViewController.swift in Sources */,
-				5B76A484261E251400D708DC /* HistoryController.swift in Sources */,
+				5B6ADFDB261FFB4C00ED8594 /* KataKotorService.swift in Sources */,
 				BF2C7894261C567400F1FFCA /* AppDelegate.swift in Sources */,
-				5B76A48A261E253400D708DC /* KataKotorController.swift in Sources */,
 				BF2C7896261C567400F1FFCA /* SceneDelegate.swift in Sources */,
-				BF2C78D8261CB32A00F1FFCA /* RiwayatData.swift in Sources */,
+				5B6ADFF4261FFBB700ED8594 /* DateExtension.swift in Sources */,
+				5B6ADFE1261FFB5900ED8594 /* UserService.swift in Sources */,
+				5B6ADFFE261FFC3A00ED8594 /* KataKotorRiwayat.swift in Sources */,
 				BF2C789E261C567400F1FFCA /* Qwerty.xcdatamodeld in Sources */,
 				5B76A464261E0CC000D708DC /* NSCustomPersistentContainer.swift in Sources */,
 			);
@@ -481,6 +515,7 @@
 		5B7D6CFF261CA5510086F45E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = QwertyKeyboard/QwertyKeyboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UK7GU49NFY;
 				INFOPLIST_FILE = QwertyKeyboard/Info.plist;
@@ -500,6 +535,7 @@
 		5B7D6D00261CA5510086F45E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = QwertyKeyboard/QwertyKeyboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UK7GU49NFY;
 				INFOPLIST_FILE = QwertyKeyboard/Info.plist;

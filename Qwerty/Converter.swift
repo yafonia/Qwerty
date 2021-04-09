@@ -9,6 +9,15 @@ import Foundation
 
 class Converter {
     
+    static func convertDateToStringDateHourMinute(date: Date) -> String {
+        let dateFormatter = DateFormatter()
+
+        dateFormatter.dateFormat = "MMM d, HH:mm"
+
+        return dateFormatter.string(from: date)
+    }
+    
+    
     static func convertDateToStringHourMinute(date: Date) -> String {
         let dateFormatter = DateFormatter()
 
