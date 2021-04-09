@@ -8,9 +8,10 @@
     </entity>
     <entity name="KataKotor" representedClassName="KataKotor" syncable="YES" codeGenerationType="class">
         <attribute name="kata" optional="YES" attributeType="String"/>
+        <attribute name="total" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <elements>
-        <element name="KataKotor" positionX="-36" positionY="9" width="128" height="58"/>
         <element name="History" positionX="0" positionY="54" width="128" height="103"/>
+        <element name="KataKotor" positionX="-36" positionY="9" width="128" height="73"/>
     </elements>
 </model>

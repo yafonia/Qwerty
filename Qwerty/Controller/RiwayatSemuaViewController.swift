@@ -13,6 +13,7 @@ class RiwayatSemuaViewController: UIViewController {
        @IBOutlet var navBar: UINavigationBar!
        @IBOutlet var segmentedControl: UISegmentedControl!
 
+<<<<<<< HEAD
        private let riwayatData = RiwayatData.getRiwayat()
        let cellSpacingHeight: CGFloat = 5
        
@@ -34,6 +35,22 @@ class RiwayatSemuaViewController: UIViewController {
            segmentedControl.setTitleTextAttributes(titleTextAttributesSelected, for: .selected)
        }
    }
+=======
+    private let riwayatData = HistoryService().getHistory(filter: "All")
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.navigationItem.title = "Riwayat"
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.rowHeight = UITableView.automaticDimension
+        
+        
+        // Do any additional setup after loading the view.
+    }
+
+}
+>>>>>>> d993da91f44dec7a8610b4d746be44fd11b74e7f
 
    extension RiwayatSemuaViewController: UITableViewDelegate {
        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
